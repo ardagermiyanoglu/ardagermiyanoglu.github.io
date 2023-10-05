@@ -34,8 +34,14 @@
 </head>
 <body>
     <div id="header">
+        <div>
+            <p> 
+                <span id="tr" class="button_lang current_lang">TR</span>
+                <span id="en" class="button_lang">EN</span>
+            </p>
+        </div>
         <h1>Arda Germiyanoğlu</h1>
-        <h2>Senior Software Developer</h2>
+        <h2 class="translation english" id="translate">Senior Software Developer</h2>
         <h3>Ankara, Türkiye</h3>
         <p>arda<!--comment--><span>&#64;</span><!--comment-->ardage<!--comment-->rmiyanoglu.<!--comment-->net</strong></p>
         <p>
@@ -45,5 +51,17 @@
             </ul>
         </p>
     </div>
+    <script>
+        var elements = document.getElementsByClassName("button_lang");
+
+        var myFunction = function() {
+            var attribute = this.getAttribute("id");
+            alert(attribute);
+        };
+
+         Array.from(elements).forEach(function(element) {
+          element.addEventListener('click', myFunction);
+        });
+    </script>
 </body>
 </html>
