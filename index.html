@@ -63,7 +63,7 @@
         </p>
     </div>
     <script>
-        var elements = document.getElementsByClassName("button_lang");
+        var langElements = document.getElementsByClassName("button_lang");
         
         var langChangeFunction = function() {
             var id = this.getAttribute("id");
@@ -73,8 +73,8 @@
                 document.getElementById("translation-title").innerHTML = "Senior Software Developer";
             }            
         };
-
-        Array.from(elements).forEach(function(element) {
+        
+        Array.from(langElements).forEach(function(element) {
           element.addEventListener('click', langChangeFunction);
         });
     </script>
