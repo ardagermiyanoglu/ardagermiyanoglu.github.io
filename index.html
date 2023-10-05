@@ -48,7 +48,7 @@
             </p>
         </div>
         <h1>Arda Germiyanoğlu</h1>
-        <h2 class="translation english" id="translate">Senior Software Developer</h2>
+        <h2 id="translation-title">Senior Software Developer</h2>
         <h3>Ankara, Türkiye</h3>
         <p>arda<!--comment--><span>&#64;</span><!--comment-->ardage<!--comment-->rmiyanoglu.<!--comment-->net</strong></p>
         <p>
@@ -60,10 +60,16 @@
     </div>
     <script>
         var elements = document.getElementsByClassName("button_lang");
-
+        
         var myFunction = function() {
-            var attribute = this.getAttribute("id");
-            alert(attribute);
+            var id = this.getAttribute("id");
+            console.log(id);
+            let translationTitleContent = document.getElementById("translation-title").innerHTML;
+            if (id === "tr") {
+                translationTitleContent.innerHTML = "Kıdemli Yazılım Geliştirici";
+            } else {
+                translationTitleContent.innerHTML = "Senior Software Developer";
+            }            
         };
 
          Array.from(elements).forEach(function(element) {
