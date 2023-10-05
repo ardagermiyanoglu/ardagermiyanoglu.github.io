@@ -29,6 +29,7 @@
         }
         .button_lang {
             padding: 5px;
+            border-radius: 5px;
             background-color: #e9e9e9;
         }
         @media only screen and (min-width: 1200px) {
@@ -64,15 +65,14 @@
         var myFunction = function() {
             var id = this.getAttribute("id");
             console.log(id);
-            let translationTitleContent = document.getElementById("translation-title").innerHTML;
             if (id === "tr") {
-                translationTitleContent.innerHTML = "Kıdemli Yazılım Geliştirici";
+                document.getElementById("translation-title").innerHTML = "Kıdemli Yazılım Geliştirici";
             } else {
-                translationTitleContent.innerHTML = "Senior Software Developer";
+                document.getElementById("translation-title").innerHTML = "Senior Software Developer";
             }            
         };
 
-         Array.from(elements).forEach(function(element) {
+        Array.from(elements).forEach(function(element) {
           element.addEventListener('click', myFunction);
         });
     </script>
