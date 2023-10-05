@@ -66,9 +66,8 @@
     <script>
         var elements = document.getElementsByClassName("button_lang");
         
-        var myFunction = function() {
+        var langChangeFunction = function() {
             var id = this.getAttribute("id");
-            console.log(id);
             if (id === "tr") {
                 document.getElementById("translation-title").innerHTML = "Kıdemli Yazılım Geliştirici";
             } else {
@@ -77,7 +76,7 @@
         };
 
         Array.from(elements).forEach(function(element) {
-          element.addEventListener('click', myFunction);
+          element.addEventListener('click', langChangeFunction);
         });
     </script>
 </body>
