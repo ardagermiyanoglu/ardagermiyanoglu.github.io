@@ -8,7 +8,6 @@ a {
 }
 span {
 	font-family: monospace;
-	font-size: 1.2em;
 }
 span:after {
 	content:"_";
