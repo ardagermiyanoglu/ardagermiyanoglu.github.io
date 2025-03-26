@@ -10,7 +10,7 @@ span {
 	font-family: monospace;
 }
 span:after {
-	content:"_";
+	content:"_ ";
 	opacity: 0;
 	animation: cursor 1s infinite;
 }
