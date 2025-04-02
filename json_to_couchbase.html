@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<pre>
 import json
 from couchbase.cluster import Cluster
 from couchbase.auth import PasswordAuthenticator
@@ -15,3 +22,7 @@ for i, entry in enumerate(data):
     collection.upsert(key, entry)
 
 print("OK")
+</pre>
+
+</body>
+</html>
