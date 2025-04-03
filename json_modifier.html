@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<pre>
+import json
+
+def convert_to_word_clue(json_data):
+    word_clues = []
+
+    for key, value in json_data.items():
+        # Anahtarın ".01" ile bittiğini ve "_" içermediğini kontrol et
+        if key.endswith(".01") and "_" not in key:
+            word = key.split(".")[0]  # Kelimeyi al (örneğin "able.a.01" -> "able")
+            clue = value["definition"]  # "definition" kısmını al
+            word_clues.append({"word": word, "clue": clue})
+
+    return word_clues
+
+# JSON dosyasını yükleme
+def load_json_from_file(filename):
+    with open(filename, 'r') as file:
+        return json.load(file)
+
+# JSON dosyasına veri yazma
+def save_to_json_file(data, filename):
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=2)
+
+def main():
+    # JSON dosyasını yükle
+    json_data = load_json_from_file("wordnet_data.json")
+
+    # JSON verisini dönüştür
+    word_clues = convert_to_word_clue(json_data)
+
+    # Sonuçları dosyaya kaydet
+    save_to_json_file(word_clues, "output_word_clues.json")
+
+if __name__ == "__main__":
+    main()
+</pre>
+
+</body>
+</html>
