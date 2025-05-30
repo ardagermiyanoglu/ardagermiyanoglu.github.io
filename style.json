@@ -6,7 +6,7 @@
   "sources": {
     "yaren": {
       "type": "vector",
-      "tiles": ["file:///storage/emulated/0/Yaren/my_area.pmtiles/{z}/{x}/{y}"],
+      "tiles": ["file:///storage/emulated/0/Download/my_area.pmtiles/{z}/{x}/{y}"],
       "minzoom": 0,
       "maxzoom": 14
     }
