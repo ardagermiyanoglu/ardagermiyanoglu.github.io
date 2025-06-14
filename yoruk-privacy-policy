@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy for Yoruk App</title>
+</head>
+<body>
+    <h1>Privacy Policy for Yoruk App</h1>
+    <p>Thank you for using Yoruk, a GPS-based path tracking and direction-finding application. Your privacy is important to us. This Privacy Policy explains how the app collects, uses, and protects your data.</p>
+
+    <h2>1. No Personal Data Collection</h2>
+    <p>Yoruk does not collect, store, or share any personal data. The application processes only your device's location data locally and temporarily for the purpose of displaying information on your screen.</p>
+
+    <h2>2. Use of Location Data</h2>
+    <p>Yoruk uses GPS signals to determine your location.</p>
+    <p>It does not use compass sensors. Instead, direction is calculated using your recent GPS coordinates (latitude and longitude).</p>
+    <p>When the device is stationary, Yoruk does not provide real-time directional updates.</p>
+    <p>Location data is not recorded, not stored, and not transmitted anywhere.</p>
+
+    <h2>3. No Internet Usage</h2>
+    <p>The application operates entirely offline.</p>
+    <p>It does not access the internet and therefore does not send or receive any data over a network.</p>
+    <p>Due to the lack of internet usage, map services are not available.</p>
+
+    <h2>4. No Compass Dependency</h2>
+    <p>Yoruk is designed to work independently of the device’s compass and internet, making it especially useful in outdoor or emergency scenarios where:</p>
+    <ul>
+        <li>Network signal is unavailable,</li>
+        <li>Compass readings are unreliable,</li>
+        <li>Or during sea travel or remote wilderness navigation.</li>
+    </ul>
+
+    <h2>5. Background Operation</h2>
+    <p>Yoruk may continue to run in the background to provide continuous GPS-based tracking, but no data is retained or transmitted.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated as needed. Any changes will be reflected in this document with an updated effective date.</p>
+    <p>If you have any questions or concerns about this policy, please contact us at: <a href="mailto:yoruk.support@protonmail.com">yoruk.support@protonmail.com</a></p>
+</body>
+</html>
