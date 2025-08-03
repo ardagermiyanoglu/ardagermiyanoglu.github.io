@@ -130,6 +130,35 @@
       border-top: 1px solid #333;
     }
 
+    .feature-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-top: 1px solid #333;
+      padding-top: 2rem;
+    }
+    
+    .feature-section img {
+      flex: 1 1 300px;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .feature-section div {
+      flex: 2 1 400px;
+    }
+    
+    .feature-section h3 {
+      color: #64dd17;
+      margin-top: 0;
+    }
+
+
     @media (max-width: 600px) {
       h1 {
         font-size: 1.5rem;
@@ -191,6 +220,52 @@
       <li>Sailing, shepherding, and nomadic travel</li>
       <li>Preppers, survivalists, and EDC users</li>
     </ul>
+
+    <h2>In-App Screens and Explanations</h2>
+
+<div class="feature-section">
+  <img src="images/route-1.png" alt="Route Tracking Screen">
+  <div>
+    <h3>Track Your Route</h3>
+    <p>Your path is recorded from the moment you start. You can always return to your starting point later. (See it under the <strong>Routes</strong> section.)</p>
+    <ul>
+      <li><strong>LAT, LON:</strong> Your current GPS coordinates.</li>
+      <li><strong>ALT:</strong> Altitude based on GPS.</li>
+      <li><strong>HEADING:</strong> Direction based on recent GPS signals. Works reliably even if the compass is miscalibrated.</li>
+      <li><strong>SPEED:</strong> Your speed, calculated from GPS movement.</li>
+      <li><strong>RECORDED:</strong> Total distance covered since recording started.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="feature-section">
+  <img src="images/route-2.png" alt="Route Navigation to Saved Path">
+  <div>
+    <h3>Navigate to a Saved Route</h3>
+    <p>When you select a previously saved route, the app will display its location on the map and guide you with direction and distance information to reach it.</p>
+  </div>
+</div>
+
+<div class="feature-section">
+  <img src="images/route-statistics.png" alt="Route Statistics View">
+  <div>
+    <h3>Route Statistics</h3>
+    <p>Accessible from the <strong>Route Statistics</strong> screen, you can review elevation and speed data recorded along the route — all visualized with location markers.</p>
+  </div>
+</div>
+
+<div class="feature-section">
+  <img src="images/menu.png" alt="Map Control Menu">
+  <div>
+    <h3>Map Controls Menu</h3>
+    <ul>
+      <li><strong>Recenter / Free Roam:</strong> Toggle between centering the map on your location or freely exploring it.</li>
+      <li><strong>Lock North Up:</strong> Lock the map's orientation to north or let it rotate with your direction.</li>
+      <li><strong>Add Target:</strong> Tap on the map to set a target. The app shows the direction and distance from your current location to that point.</li>
+      <li><strong>Clear Route:</strong> Clears the currently visible route from the map.</li>
+    </ul>
+  </div>
+</div>
 
     <h2>Offline GPS for Critical Situations</h2>
     <p>Even in complete signal blackouts, you can rely on Yoruk’s route history and map view to find your way back. Perfect for:</p>
