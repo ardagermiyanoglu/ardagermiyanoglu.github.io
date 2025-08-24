@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Arda Germiyanoğlu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arda Germiyanoğlu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Kenarlara boşluk ekler */
+            box-sizing: border-box; /* padding'in genişliğe dahil olmasını sağlar */
+        }
 
-    .card {
-      width: 400px;
-      height:200px;
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      position: relative; /* fotoğrafı konumlandırmak için */
-    }
+        .card {
+            width: 100%; /* Mobil cihazlarda tam genişlik */
+            max-width: 400px; /* Geniş ekranlarda maksimum genişlik */
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 200px; /* İçerik için minimum yükseklik */
+        }
 
-    .title {
-      font-size: 18px;
-      font-weight: bold;
-      color: #002855;
-    }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #002855;
+            text-align: center; /* Başlık ortalanır */
+        }
 
-    .date-location {
-      font-size: 14px;
-      color: #333;
-      margin-top: 10px;
-    }
+        .date-location {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+            text-align: center; /* Konum bilgisi ortalanır */
+        }
 
-    .profile {
-      position: absolute;
-      bottom: -40px; /* kartın altından taşırır */
-      right: 20px;   /* sağ alt köşeye hizalar */
-      text-align: center;
-    }
+        .profile {
+            position: relative; /* Mobil görünüm için statik konum */
+            text-align: center;
+            margin-top: 20px; /* İçerikle arasına boşluk */
+        }
 
-    .profile img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #ccc; /* placeholder */
-      border: 4px solid white; /* kenar beyaz çerçeve efekti */
-    }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ccc;
+            border: 4px solid white;
+        }
 
-    .name {
-      margin-top: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #003366;
-    }
-  </style>
+        .name {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        /* Mobil cihazlar için ek düzenlemeler */
+        @media (max-width: 600px) {
+            .card {
+                padding: 15px; /* Daha küçük padding */
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <div class="title">
-      SENIOR SOFTWARE DEVELOPER
-    </div>
-    <div class="date-location">
-      Ankara, TURKIYE
-    </div>
+    <div class="card">
+        <div class="title">
+            SENIOR SOFTWARE DEVELOPER
+        </div>
+        <div class="date-location">
+            Ankara, TURKIYE
+        </div>
 
-    <div class="profile">
-      <img src="https://placehold.co/100x100" alt="Profile">
-      <div class="name">Arda GERMİYANOĞLU</div>
+        <div class="profile">
+            <img src="https://placehold.co/100x100" alt="Profile">
+            <div class="name">Arda GERMİYANOĞLU</div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
