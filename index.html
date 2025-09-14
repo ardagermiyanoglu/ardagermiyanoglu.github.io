@@ -67,32 +67,37 @@
     }
 
     /* Light theme */
-body.light {
-  background-color: #f5f4f2;
-  color: #000000;
-}
+    body.light {
+      background-color: #f5f4f2;
+      color: #000000;
+    }
+    
+    body.light a {
+      color: #1a0dab; /* klasik mavi link */
+    }
 
-body.light a {
-  color: #1a0dab; /* klasik mavi link */
-}
+    /* Dark theme */
+    body.dark {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    
+    body.dark a {
+      color: #90caf9; /* açık mavi (göz yormayan) */
+    }
+    
+    body.dark a:hover {
+      color: #bbdefb; /* hover için biraz daha açık */
+    }
 
-/* Dark theme */
-body.dark {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-body.dark a {
-  color: #90caf9; /* açık mavi (göz yormayan) */
-}
-
-body.dark a:hover {
-  color: #bbdefb; /* hover için biraz daha açık */
-}
-
-    #projects {
+   body.light #projects {
       padding: 20px;
       background-color: #e4e1dd;
+      border-radius: 4px;
+    }
+    body.dark #projects {
+      padding: 20px;
+      background-color: #312c27;
       border-radius: 4px;
     }
 
