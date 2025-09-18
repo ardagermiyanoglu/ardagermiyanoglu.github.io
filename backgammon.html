@@ -11,30 +11,25 @@
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
     :root {
-      --bg:#0c0c0c;
-      --fg:#f4f4f4;
-      --accent:#ffb347;
-      --card:#1e1e1e;
-      --grid:#262626;
+      --bg1:#1c1c1c;
+      --bg2:#2a2a2a;
+      --fg:#f5f5f5;
+      --accent:#f7a440;
+      --card:#292929;
+      --muted:#cfcfcf;
     }
     * { box-sizing: border-box; }
     body {
       margin:0;
-      font-family: 'Press Start 2P', cursive;
+      font-family: system-ui, -apple-system, sans-serif;
       color: var(--fg);
-      background: repeating-linear-gradient(
-        45deg,
-        var(--bg),
-        var(--bg) 20px,
-        var(--grid) 20px,
-        var(--grid) 40px
-      );
+      background: linear-gradient(180deg,var(--bg1),var(--bg2));
       line-height: 1.6;
     }
     header, main, footer { max-width: 960px; margin: 0 auto; padding: 20px; }
     header nav {
       display:flex; justify-content: space-between; align-items: center;
-      font-size: 12px;
+      font-size: 14px;
     }
     header a { color: var(--accent); text-decoration:none; margin-left:18px; }
     header a:hover { text-decoration: underline; }
@@ -43,29 +38,31 @@
       display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items:center;
       margin-top: 32px;
     }
-    .hero h1 { font-size: 18px; margin-bottom:16px; color: var(--accent); }
-    .hero p { font-size: 12px; color:#d9d9d9; margin-bottom:20px; }
+    .hero h1 { 
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px; margin-bottom:16px; color: var(--accent);
+    }
+    .hero p { font-size: 16px; color:var(--muted); margin-bottom:20px; }
 
     .cta {
       display:inline-block;
       background: var(--accent);
       color:#000;
-      padding:14px 18px;
-      border: 4px solid #000;
-      box-shadow: 4px 4px #000;
+      padding:12px 18px;
+      border-radius: 10px;
       text-decoration:none;
-      font-size: 12px;
-      transition: transform .1s;
+      font-weight:600;
+      transition: background .2s;
     }
-    .cta:hover { transform: translate(-2px, -2px); }
+    .cta:hover { background:#ffb95e; }
 
     .screen {
       background: var(--card);
-      border:4px solid #000;
-      box-shadow: 8px 8px #000;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.4);
       padding:8px;
     }
-    .screen img { width:100%; display:block; }
+    .screen img { width:100%; border-radius:10px; display:block; }
 
     .features {
       margin-top:48px;
@@ -74,18 +71,17 @@
     }
     .feature {
       background: var(--card);
-      border: 3px solid #000;
-      box-shadow: 4px 4px #000;
-      padding:16px;
-      font-size: 11px;
+      border-radius:12px;
+      padding:20px;
+      font-size: 14px;
     }
-    .feature h3 { font-size: 12px; margin:0 0 10px; color:var(--accent); }
+    .feature h3 { margin:0 0 10px; font-size: 16px; color:var(--accent); }
 
     footer {
       margin-top:60px;
       text-align:center;
-      font-size: 10px;
-      color:#aaa;
+      font-size: 13px;
+      color:var(--muted);
     }
     footer a { color: var(--accent); text-decoration:none; margin:0 6px; }
     footer a:hover { text-decoration: underline; }
@@ -98,7 +94,7 @@
 <body>
   <header>
     <nav>
-      <div>🎲 Pixel Backgammon</div>
+      <div style="font-weight:700;">🎲 Pixel Backgammon</div>
       <div>
         <a href="#features">Features</a>
         <a href="#download">Download</a>
@@ -110,12 +106,12 @@
   <main>
     <section class="hero">
       <div>
-        <h1>Pixel Backgammon – Retro 8-Bit Style</h1>
+        <h1>Pixel Backgammon</h1>
         <p>
-          Step into the arcade world of classic backgammon!  
-          Play single-player matches against smart AI, with smooth moves and retro 8-bit graphics.
+          Retro 8-bit style meets classic backgammon!  
+          Play against smart AI with a clean interface and nostalgic pixel graphics.
         </p>
-        <a class="cta" id="download" href="https://apps.apple.com/app/idAPP_STORE_ID" rel="noopener">⬇ Download on App Store</a>
+        <a class="cta" id="download" href="https://apps.apple.com/app/idAPP_STORE_ID" rel="noopener">Download on App Store</a>
       </div>
       <div class="screen">
         <img src="https://example.com/pixel-screenshot.png" alt="Pixel Backgammon Screenshot">
@@ -125,23 +121,19 @@
     <section id="features" class="features">
       <div class="feature">
         <h3>🧠 Smart AI</h3>
-        <p>Balanced gameplay with unpredictable tactics every match.</p>
+        <p>Balanced gameplay with fresh tactics every match.</p>
       </div>
       <div class="feature">
         <h3>🎨 Pixel Art Board</h3>
-        <p>Retro checker designs and vivid colors for a nostalgic look.</p>
+        <p>Nostalgic checker and board design in 8-bit style.</p>
       </div>
       <div class="feature">
-        <h3>⚡ Fast Gameplay</h3>
-        <p>SwiftUI animations optimized for smooth experience.</p>
+        <h3>⚡ Smooth Gameplay</h3>
+        <p>SwiftUI animations optimized for iPhone & iPad.</p>
       </div>
       <div class="feature">
-        <h3>🎮 Touch Controls</h3>
-        <p>Drag, drop or tap – responsive moves with clear highlights.</p>
-      </div>
-      <div class="feature">
-        <h3>📺 Retro Vibes</h3>
-        <p>CRT-style shadows and arcade sounds transport you back in time.</p>
+        <h3>🎮 Easy Controls</h3>
+        <p>Drag, drop or tap – intuitive moves at your fingertips.</p>
       </div>
     </section>
   </main>
